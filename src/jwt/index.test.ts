@@ -28,7 +28,7 @@ describe("jwt", () => {
 	test("decode jwt error", () => {
 		const onErrorSpy = vitest.fn()
 
-		const { header, payload } = jwt("bad-token", { onError: onErrorSpy })
+		const { header, payload } = jwt("bad-token", { on_error: onErrorSpy })
 		expect(header).toBe(null)
 		expect(payload).toBe(null)
 		expect(onErrorSpy).toHaveBeenCalled()

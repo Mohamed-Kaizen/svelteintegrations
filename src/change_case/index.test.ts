@@ -1,9 +1,9 @@
-import { changeCase } from "."
+import { change_case } from "."
 
 import type { Options } from "change-case"
 import type { ChangeCaseType } from "."
 
-describe("changeCase", () => {
+describe("change_case", () => {
 	interface objectValue {
 		helloWorld: string
 		svelteaction: string
@@ -56,9 +56,9 @@ describe("changeCase", () => {
 		}
 		const arr = Object.keys(obj) as Array<keyof ObjectTypes>
 		arr.forEach((key) => {
-			const hResult = changeCase(helloWorld, key)
+			const hResult = change_case(helloWorld, key)
 			expect(hResult).toBe(obj[key].helloWorld)
-			const sResult = changeCase(svelteaction, key)
+			const sResult = change_case(svelteaction, key)
 			expect(sResult).toBe(obj[key].svelteaction)
 		})
 	})
@@ -67,9 +67,9 @@ describe("changeCase", () => {
 		const options: Options = {
 			delimiter: "-",
 		}
-		const hResult = changeCase(helloWorld, "camelCase", options)
+		const hResult = change_case(helloWorld, "camelCase", options)
 		expect(hResult).toBe("hello-World")
-		const sResult = changeCase(svelteaction, "camelCase", options)
+		const sResult = change_case(svelteaction, "camelCase", options)
 		expect(sResult).toBe("svelte-Action")
 	})
 })
