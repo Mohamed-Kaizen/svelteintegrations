@@ -339,30 +339,12 @@ index.json
 indexes.json
 
 
-**/change_case
+/change_case
 change_case.js
 change_case.cjs
-**/jwt
+/jwt
 jwt.js
 jwt.cjs
-**/qr_code
-qr_code.js
-qr_code.cjs
-**/change_case
-change_case.js
-change_case.cjs
-**/jwt
-jwt.js
-jwt.cjs
-**/qr_code
-qr_code.js
-qr_code.cjs
-**/change_case
-change_case.js
-change_case.cjs
-**/jwt
-jwt.js
-jwt.cjs
-**/qr_code
+/qr_code
 qr_code.js
 qr_code.cjs
