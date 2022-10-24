@@ -1,5 +1,5 @@
 import QRCode from "qrcode"
-import { make_destructurable, to_writable } from "svelteshareds"
+import { to_readable, to_writable } from "svelteshareds"
 
 /**
  * Wrapper for qrcode.
@@ -25,10 +25,11 @@ export function qr_code(text: string, options?: QRCode.QRCodeToDataURLOptions) {
 
 	generate()
 
-	return make_destructurable(
-		{ output, pending, error } as const,
-		[output, pending, error] as const
-	)
+	return {
+		output: to_readable(output),
+		pending: to_readable(pending),
+		error: to_readable(error),
+	}
 }
 
 // alias
