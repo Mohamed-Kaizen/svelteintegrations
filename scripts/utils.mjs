@@ -61,7 +61,13 @@ export async function gitignore() {
 		cwd: DIR_SRC,
 		ignore: ["_*", "dist", "node_modules"],
 	})
-	files = files.map((f) => `/${f}\n${f}.js\n${f}.cjs`)
+
+	const _files = files.map((f) => `/${f}`)
+
+	for (const file of files) {
+		_files.push(`${file}.js`)
+		_files.push(`${file}.cjs`)
+	}
 
 	const gitignorePath = path.join(DIR_ROOT, ".gitignore")
 
@@ -70,10 +76,10 @@ export async function gitignore() {
 	const lines = gitignore.split("\n")
 
 	const newLines = lines.filter((line) => {
-		return !files.includes(line)
+		return !_files.includes(line)
 	})
 
-	await fs.writeFile(gitignorePath, [...newLines, ...files].join("\n"))
+	await fs.writeFile(gitignorePath, [...newLines, ..._files].join("\n"))
 }
 
 export async function clear() {
