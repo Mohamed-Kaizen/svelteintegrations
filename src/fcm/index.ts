@@ -71,7 +71,7 @@ export function fcm(firebase: FirebaseApp, options: FcmOptions = {}) {
 	return {
 		token: to_readable(token),
 		error: to_readable(error),
-		is_supported,
+		is_supported: to_readable(is_supported),
 		messaging: to_readable(messaging),
 		on_message,
 	}
