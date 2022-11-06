@@ -1,6 +1,6 @@
 {
     "name": "svelteintegrations",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "packageManager": "pnpm@7.12.2",
     "description": "Wrappers for utility libraries",
     "author": "Mohamed Nesredin<https://github.com/Mohamed-Kaizen>",
