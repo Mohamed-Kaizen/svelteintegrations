@@ -38,6 +38,10 @@
             "import": "./change_case.js",
             "require": "./change_case.cjs"
         },
+        "./fcm": {
+            "import": "./fcm.js",
+            "require": "./fcm.cjs"
+        },
         "./jwt": {
             "import": "./jwt.js",
             "require": "./jwt.cjs"
@@ -54,6 +58,9 @@
     },
     "peerDependenciesMeta": {
         "change-case": {
+            "optional": true
+        },
+        "firebase": {
             "optional": true
         },
         "jwt-decode": {
@@ -79,6 +86,7 @@
         "eslint-config-prettier": "^8.5.0",
         "fast-glob": "^3.2.12",
         "fs-extra": "^10.1.0",
+        "firebase": "^9.13.0",
         "inquirer": "^9.1.2",
         "jwt-decode": "^3.1.2",
         "prettier": "^2.7.1",

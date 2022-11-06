@@ -340,10 +340,13 @@ indexes.json
 
 
 /change_case
+/fcm
 /jwt
 /qr_code
 change_case.js
 change_case.cjs
+fcm.js
+fcm.cjs
 jwt.js
 jwt.cjs
 qr_code.js
