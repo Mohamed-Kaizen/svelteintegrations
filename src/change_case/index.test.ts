@@ -1,3 +1,5 @@
+import { describe, expect, test } from "vitest"
+
 import { change_case } from "."
 
 import type { Options } from "change-case"

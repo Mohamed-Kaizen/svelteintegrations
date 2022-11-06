@@ -339,10 +339,13 @@ index.json
 indexes.json
 
 
+/async_validator
 /change_case
 /fcm
 /jwt
 /qr_code
+async_validator.js
+async_validator.cjs
 change_case.js
 change_case.cjs
 fcm.js

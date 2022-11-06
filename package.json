@@ -34,6 +34,10 @@
         "test:watch": "vitest --watch"
     },
     "exports": {
+        "./async_validator": {
+            "import": "./async_validator.js",
+            "require": "./async_validator.cjs"
+        },
         "./change_case": {
             "import": "./change_case.js",
             "require": "./change_case.cjs"
@@ -52,11 +56,16 @@
         }
     },
     "peerDependencies": {
+        "async-validator": "*",
         "change-case": "*",
+        "firebase": "*",
         "jwt-decode": "*",
         "qrcode": "*"
     },
     "peerDependenciesMeta": {
+        "async-validator": {
+            "optional": true
+        },
         "change-case": {
             "optional": true
         },
@@ -79,6 +88,7 @@
         "@typescript-eslint/eslint-plugin": "^5.38.0",
         "@typescript-eslint/parser": "^5.38.0",
         "@vitest/ui": "^0.23.4",
+        "async-validator": "^4.2.5",
         "bumpp": "^8.2.1",
         "c8": "^7.12.0",
         "change-case": "^4.1.2",

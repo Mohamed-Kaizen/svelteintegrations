@@ -1,4 +1,4 @@
-import { to_writable, to_readable, unstore } from "svelteshareds"
+import { to_readable, to_writable, unstore } from "svelteshareds"
 import { getMessaging, getToken, onMessage } from "firebase/messaging"
 
 import type { FirebaseApp } from "firebase/app"

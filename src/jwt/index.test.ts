@@ -1,3 +1,5 @@
+import { describe, expect, test, vitest } from "vitest"
+
 import { jwt } from "."
 
 import type { JwtHeader, JwtPayload } from "jwt-decode"
