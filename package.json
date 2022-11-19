@@ -50,6 +50,10 @@
             "import": "./fuse.js",
             "require": "./fuse.cjs"
         },
+        "./idb_keyval": {
+            "import": "./idb_keyval.js",
+            "require": "./idb_keyval.cjs"
+        },
         "./jwt": {
             "import": "./jwt.js",
             "require": "./jwt.cjs"
@@ -64,6 +68,7 @@
         "change-case": "*",
         "firebase": "*",
         "fuse.js": "*",
+        "idb-keyval": "*",
         "jwt-decode": "*",
         "qrcode": "*"
     },
@@ -78,6 +83,9 @@
             "optional": true
         },
         "fuse.js": {
+            "optional": true
+        },
+        "idb-keyval": {
             "optional": true
         },
         "jwt-decode": {
@@ -106,6 +114,7 @@
         "fs-extra": "^10.1.0",
         "firebase": "^9.13.0",
         "fuse.js": "^6.6.2",
+        "idb-keyval": "^6.2.0",
         "inquirer": "^9.1.2",
         "jwt-decode": "^3.1.2",
         "prettier": "^2.7.1",

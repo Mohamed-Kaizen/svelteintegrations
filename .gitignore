@@ -343,6 +343,7 @@ indexes.json
 /change_case
 /fcm
 /fuse
+/idb_keyval
 /jwt
 /qr_code
 async_validator.js
@@ -353,6 +354,8 @@ fcm.js
 fcm.cjs
 fuse.js
 fuse.cjs
+idb_keyval.js
+idb_keyval.cjs
 jwt.js
 jwt.cjs
 qr_code.js
