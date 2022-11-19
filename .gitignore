@@ -342,6 +342,7 @@ indexes.json
 /async_validator
 /change_case
 /fcm
+/fuse
 /jwt
 /qr_code
 async_validator.js
@@ -350,6 +351,8 @@ change_case.js
 change_case.cjs
 fcm.js
 fcm.cjs
+fuse.js
+fuse.cjs
 jwt.js
 jwt.cjs
 qr_code.js

@@ -46,6 +46,10 @@
             "import": "./fcm.js",
             "require": "./fcm.cjs"
         },
+        "./fuse": {
+            "import": "./fuse.js",
+            "require": "./fuse.cjs"
+        },
         "./jwt": {
             "import": "./jwt.js",
             "require": "./jwt.cjs"
@@ -59,6 +63,7 @@
         "async-validator": "*",
         "change-case": "*",
         "firebase": "*",
+        "fuse.js": "*",
         "jwt-decode": "*",
         "qrcode": "*"
     },
@@ -70,6 +75,9 @@
             "optional": true
         },
         "firebase": {
+            "optional": true
+        },
+        "fuse.js": {
             "optional": true
         },
         "jwt-decode": {
@@ -97,6 +105,7 @@
         "fast-glob": "^3.2.12",
         "fs-extra": "^10.1.0",
         "firebase": "^9.13.0",
+        "fuse.js": "^6.6.2",
         "inquirer": "^9.1.2",
         "jwt-decode": "^3.1.2",
         "prettier": "^2.7.1",

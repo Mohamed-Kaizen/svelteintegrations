@@ -18,6 +18,7 @@ specifiers:
   fast-glob: ^3.2.12
   firebase: ^9.13.0
   fs-extra: ^10.1.0
+  fuse.js: ^6.6.2
   inquirer: ^9.1.2
   jwt-decode: ^3.1.2
   prettier: ^2.7.1
@@ -50,6 +51,7 @@ devDependencies:
   fast-glob: 3.2.12
   firebase: 9.13.0
   fs-extra: 10.1.0
+  fuse.js: 6.6.2
   inquirer: 9.1.2
   jwt-decode: 3.1.2
   prettier: 2.7.1
@@ -2269,6 +2271,11 @@ packages:
 
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
+    dev: true
+
+  /fuse.js/6.6.2:
+    resolution: {integrity: sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==}
+    engines: {node: '>=10'}
     dev: true
 
   /get-caller-file/2.0.5:
