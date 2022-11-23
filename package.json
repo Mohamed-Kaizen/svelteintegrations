@@ -1,131 +1,131 @@
 {
-    "name": "svelteintegrations",
-    "version": "0.4.1",
-    "packageManager": "pnpm@7.12.2",
-    "description": "Wrappers for utility libraries",
-    "author": "Mohamed Nesredin<https://github.com/Mohamed-Kaizen>",
-    "license": "MIT",
-    "homepage": "https://github.com/Mohamed-Kaizen/svelteintegrations#readme",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Mohamed-Kaizen/svelteintegrations.git"
-    },
-    "bugs": {
-        "url": "https://github.com/Mohamed-Kaizen/svelteintegrations/issues"
-    },
-    "keywords": [
-        "svelte",
-        "utils"
-    ],
-    "type": "module",
-    "scripts": {
-        "build": "pnpm run clean && pnpm run build:files && pnpm run build:types",
-        "build:types": "tsc --project tsconfig.json",
-        "build:files": "node scripts/build.mjs",
-        "clean": "node scripts/clean.mjs",
-        "git:add": "pnpm run build && pnpm run clean && git add .",
-        "commit": "cz commit",
-        "coverage": "vitest run --coverage",
-        "lint": "eslint .",
-        "lint:fix": "pnpm run lint --fix",
-        "release": "bumpp --all",
-        "releasex": "standard-version",
-        "test": "vitest run",
-        "test:watch": "vitest --watch"
-    },
-    "exports": {
-        "./async_validator": {
-            "import": "./async_validator.js",
-            "require": "./async_validator.cjs"
-        },
-        "./change_case": {
-            "import": "./change_case.js",
-            "require": "./change_case.cjs"
-        },
-        "./fcm": {
-            "import": "./fcm.js",
-            "require": "./fcm.cjs"
-        },
-        "./fuse": {
-            "import": "./fuse.js",
-            "require": "./fuse.cjs"
-        },
-        "./idb_keyval": {
-            "import": "./idb_keyval.js",
-            "require": "./idb_keyval.cjs"
-        },
-        "./jwt": {
-            "import": "./jwt.js",
-            "require": "./jwt.cjs"
-        },
-        "./qr_code": {
-            "import": "./qr_code.js",
-            "require": "./qr_code.cjs"
-        }
-    },
-    "peerDependencies": {
-        "async-validator": "*",
-        "change-case": "*",
-        "firebase": "*",
-        "fuse.js": "*",
-        "idb-keyval": "*",
-        "jwt-decode": "*",
-        "qrcode": "*"
-    },
-    "peerDependenciesMeta": {
-        "async-validator": {
-            "optional": true
-        },
-        "change-case": {
-            "optional": true
-        },
-        "firebase": {
-            "optional": true
-        },
-        "fuse.js": {
-            "optional": true
-        },
-        "idb-keyval": {
-            "optional": true
-        },
-        "jwt-decode": {
-            "optional": true
-        },
-        "qrcode": {
-            "optional": true
-        }
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^17.1.2",
-        "@commitlint/config-conventional": "^17.1.0",
-        "@commitlint/prompt-cli": "^17.1.2",
-        "@types/node": "^18.7.18",
-        "@types/qrcode": "^1.5.0",
-        "@typescript-eslint/eslint-plugin": "^5.38.0",
-        "@typescript-eslint/parser": "^5.38.0",
-        "@vitest/ui": "^0.23.4",
-        "async-validator": "^4.2.5",
-        "bumpp": "^8.2.1",
-        "c8": "^7.12.0",
-        "change-case": "^4.1.2",
-        "eslint": "^8.24.0",
-        "eslint-config-prettier": "^8.5.0",
-        "fast-glob": "^3.2.12",
-        "fs-extra": "^10.1.0",
-        "firebase": "^9.13.0",
-        "fuse.js": "^6.6.2",
-        "idb-keyval": "^6.2.0",
-        "inquirer": "^9.1.2",
-        "jwt-decode": "^3.1.2",
-        "prettier": "^2.7.1",
-        "qrcode": "^1.5.1",
-        "rimraf": "^3.0.2",
-        "svelte": "^3.50.1",
-        "typescript": "^4.6.4",
-        "vite": "^3.2.2",
-        "vitest": "^0.24.5"
-    },
-    "dependencies": {
-        "svelteshareds": "^1.0.4"
-    }
+	"name": "svelteintegrations",
+	"version": "0.4.2",
+	"packageManager": "pnpm@7.12.2",
+	"description": "Wrappers for utility libraries",
+	"author": "Mohamed Nesredin<https://github.com/Mohamed-Kaizen>",
+	"license": "MIT",
+	"homepage": "https://github.com/Mohamed-Kaizen/svelteintegrations#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mohamed-Kaizen/svelteintegrations.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Mohamed-Kaizen/svelteintegrations/issues"
+	},
+	"keywords": [
+		"svelte",
+		"utils"
+	],
+	"type": "module",
+	"scripts": {
+		"build": "pnpm run clean && pnpm run build:files && pnpm run build:types",
+		"build:types": "tsc --project tsconfig.json",
+		"build:files": "node scripts/build.mjs",
+		"clean": "node scripts/clean.mjs",
+		"git:add": "pnpm run build && pnpm run clean && git add .",
+		"commit": "cz commit",
+		"coverage": "vitest run --coverage",
+		"lint": "eslint .",
+		"lint:fix": "pnpm run lint --fix",
+		"release": "bumpp --all",
+		"releasex": "standard-version",
+		"test": "vitest run",
+		"test:watch": "vitest --watch"
+	},
+	"exports": {
+		"./async_validator": {
+			"import": "./async_validator.js",
+			"require": "./async_validator.cjs"
+		},
+		"./change_case": {
+			"import": "./change_case.js",
+			"require": "./change_case.cjs"
+		},
+		"./fcm": {
+			"import": "./fcm.js",
+			"require": "./fcm.cjs"
+		},
+		"./fuse": {
+			"import": "./fuse.js",
+			"require": "./fuse.cjs"
+		},
+		"./idb_keyval": {
+			"import": "./idb_keyval.js",
+			"require": "./idb_keyval.cjs"
+		},
+		"./jwt": {
+			"import": "./jwt.js",
+			"require": "./jwt.cjs"
+		},
+		"./qr_code": {
+			"import": "./qr_code.js",
+			"require": "./qr_code.cjs"
+		}
+	},
+	"peerDependencies": {
+		"async-validator": "*",
+		"change-case": "*",
+		"firebase": "*",
+		"fuse.js": "*",
+		"idb-keyval": "*",
+		"jwt-decode": "*",
+		"qrcode": "*"
+	},
+	"peerDependenciesMeta": {
+		"async-validator": {
+			"optional": true
+		},
+		"change-case": {
+			"optional": true
+		},
+		"firebase": {
+			"optional": true
+		},
+		"fuse.js": {
+			"optional": true
+		},
+		"idb-keyval": {
+			"optional": true
+		},
+		"jwt-decode": {
+			"optional": true
+		},
+		"qrcode": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.1.2",
+		"@commitlint/config-conventional": "^17.1.0",
+		"@commitlint/prompt-cli": "^17.1.2",
+		"@types/node": "^18.7.18",
+		"@types/qrcode": "^1.5.0",
+		"@typescript-eslint/eslint-plugin": "^5.38.0",
+		"@typescript-eslint/parser": "^5.38.0",
+		"@vitest/ui": "^0.23.4",
+		"async-validator": "^4.2.5",
+		"bumpp": "^8.2.1",
+		"c8": "^7.12.0",
+		"change-case": "^4.1.2",
+		"eslint": "^8.24.0",
+		"eslint-config-prettier": "^8.5.0",
+		"fast-glob": "^3.2.12",
+		"firebase": "^9.13.0",
+		"fs-extra": "^10.1.0",
+		"fuse.js": "^6.6.2",
+		"idb-keyval": "^6.2.0",
+		"inquirer": "^9.1.2",
+		"jwt-decode": "^3.1.2",
+		"prettier": "^2.7.1",
+		"qrcode": "^1.5.1",
+		"rimraf": "^3.0.2",
+		"svelte": "^3.50.1",
+		"typescript": "^4.6.4",
+		"vite": "^3.2.4",
+		"vitest": "^0.24.5"
+	},
+	"dependencies": {
+		"svelteshareds": "^1.0.4"
+	}
 }
